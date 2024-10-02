@@ -1,4 +1,4 @@
-<div class="footer mt-5">
+<div class="footer" style="margin-top: 7rem;">
       <div class="w-container">
         <div class="w-row">
           <div class="spc w-col w-col-4">
@@ -43,7 +43,7 @@
                 width="20"
                 alt=""
                 class="info-icon"
-              /><a href="#" class="footer-link with-icon">Pinterest</a>
+              /><a href="#" class="footer-link with-icon">API</a>
             </div>
             <div class="footer-link-wrapper w-clearfix">
               <img

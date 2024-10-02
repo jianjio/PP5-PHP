@@ -12,8 +12,8 @@ $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
 <?php endif; ?>
 
 <?php foreach ($feedback as $item): ?>
-  <div class="card m-auto mt-4 w-50">
-    <div class="card-body  text-center">
+  <div class="card m-auto mt-4 w-50 text-white">
+    <div class="card-body text-center">
       <?php echo $item['body']; ?>
       <div class="text-secondary mt-2"></div>
       <?php echo $item['name']; ?>

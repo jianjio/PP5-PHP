@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
                       <!-- CAROUSEL  -->
 
 <div class="container mt-5">
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
             <div class="carousel-inner " style="height: 500px;">
                 <div class="carousel-item active">
                     <img src="./assets/valorant.jpg" class="d-block w-100 " alt="valorant image">
@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) {
             class="white-box"
             >
             <img src="./assets/valorant.jpg" alt="valorant image" class="" />
-            <h3 class="text-white text-center">Valorant</h3>
+            <h3 class="text-white text-center" style="font-weight: 500;">Valorant</h3>
             <p class="paragraph text-white">
               Test your mettle in Riot Games’ character-based FPS shooter Valorant.
             </p>
@@ -159,7 +159,7 @@ if (isset($_POST['submit'])) {
               class="white-box text-white"
             >
               <img src="./assets/lol.webp" alt="LoL image" class="" />
-              <h3 class="text-white text-center">League of Legends</h3>
+              <h3 class="text-white text-center" style="font-weight: 500;">League of Legends</h3>
               <p class="paragraph text-white">
                 A free-to-play MOBA game, and one of the most played pc game in
                 the world.
@@ -199,7 +199,7 @@ if (isset($_POST['submit'])) {
               class="white-box"
             >
               <img src="./assets/dota.jpg" alt="dota image" class="" />
-              <h3 class="text-white text-center">dota 2</h3>
+              <h3 class="text-white text-center" style="font-weight: 500;">dota 2</h3>
               <p class="paragraph text-white">
                 A free-to-play MOBA game, and one of the most played pc game in
                 the world.
@@ -239,22 +239,24 @@ if (isset($_POST['submit'])) {
       <div class="w-container">
         <div class="section-title-group">
           <h2 class="section-heading centered white">RECOMMENDATIONS</h2>
-          <div class="section-subheading center off-white">
+          <div class="section-subheading center">
           "Step out of your comfort zone! Explore other games for new challenges, unique stories, and endless fun."
           </div>
         </div>
 
-      <!-- FIRST CARD  -->
+      <!-- FIRST REC CARD  -->
 
       <div class="w-row">
           <div class="w-col w-col-6">
-            <div class="white-box transparent">
+            <div
+            data-w-id="49e69b8a-ef40-4d84-1f92-d2617143b8db" 
+            class="white-box" style=" background-color: #53212B;">
               <img
                 src="./assets/wz.jpg"
                 alt="warzone image"
                 class="w-full mb-3"
               />
-              <h3 class="white-text">call of duty: warzone</h3>
+              <h3 class="white-text" style="font-weight: 400;">call of duty: warzone</h3>
               <p class="white-text">
               A standalone free-to-play battle royale and modes accessible via Call of Duty: Modern Warfare.
               </p>
@@ -262,16 +264,18 @@ if (isset($_POST['submit'])) {
             </div>
           </div>
 
-          <!-- SECOND CARD  -->
+          <!-- SECOND REC CARD  -->
 
           <div class="w-col w-col-6">
-            <div class="white-box transparent">
+            <div 
+            data-w-id="270e8437-efa3-df11-d438-de69b23e41e9" 
+            class="white-box" style=" background-color: #53212B;">
               <img
                 src="./assets/deadlock.jpg"
                 alt="deadlock image"
                 class="w-full mb-3"
               />
-              <h3 class="white-text">deadlock</h3>
+              <h3 class="white-text" style="font-weight: 400;">deadlock</h3>
               <p class="white-text">
                 Deadlock is an upcoming Multiplayer action game developed and published by Valve. 
               </p>
@@ -286,7 +290,7 @@ if (isset($_POST['submit'])) {
 
       <!-- FEEDBACK FORM  -->
 
-      
+
       <div class="container w-container">
         <div class="section-title-group">
           <h2 class="section-heading centered text-white">Send us your feedback</h2>
@@ -310,7 +314,7 @@ if (isset($_POST['submit'])) {
              
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="text-center">
-  <div class="mb-3">
+  <div class="mb-3 m-auto col-sm-6">
     <label for="name" class="form-label">Name</label>
     <input
       type="text"
@@ -321,7 +325,7 @@ if (isset($_POST['submit'])) {
 
     <?php if (!empty($nameErr)) { ?> <span class="text-danger"> <?php echo $nameErr; ?></span> <?php } ?>
   </div>
-  <div class="mb-3">
+  <div class="mb-3 m-auto col-sm-6">
     <label for="email" class="form-label">Email</label>
     <input
       type="email"
@@ -334,7 +338,7 @@ if (isset($_POST['submit'])) {
 
 
   </div>
-  <div class="mb-3">
+  <div class="mb-3 m-auto col-sm-6">
     <label for="body" class="form-label">Feedback</label>
     <textarea
       class="form-control"

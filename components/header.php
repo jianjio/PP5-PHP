@@ -79,7 +79,7 @@
           href="index.php"
           aria-current="page"
           class="brand-link w-nav-brand w--current"
-          ><h1 class="brand-text" style="font-family: protest guerrilla, sans-serif; font-size: 2rem">GameDev</h1></a
+          ><h1 class="brand-text" style="font-family: protest guerrilla, sans-serif; font-size: 2rem"><img src="" alt=""></h1></a
         >
         <nav role="navigation" class="navigation-menu w-nav-menu" style="font-family: poppins;">
           <a
