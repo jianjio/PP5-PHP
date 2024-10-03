@@ -5,10 +5,11 @@ $result = mysqli_query($conn, $sql);
 $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
-<h2 class="text-white" style="font-family: poppins; font-weight: 500;">Past Feedback</h2>
+<h2 class="text-white" style="font-family: poppins; font-weight: 500;">Previous Feedback</h2>
+<br>
 
 <?php if (empty($feedback)): ?>
-  <p class="lead mt-3 text-center">There is no feedback</p>
+  <p class="lead mt-3 text-center">No response has been provided.</p>
 <?php endif; ?>
 
 <?php foreach ($feedback as $item): ?>

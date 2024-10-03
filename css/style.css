@@ -1399,7 +1399,7 @@ textarea.w-select {
 }
 
 .w-dropdown-link.w--current {
-  color: #0082f3;
+  color: white;
 }
 
 .w-dropdown-link:focus {
@@ -1862,7 +1862,7 @@ textarea.w-select {
 }
 
 .w-nav-link.w--current {
-  color: #0082f3;
+  color: white;
 }
 
 .w-nav-menu {
@@ -2221,7 +2221,7 @@ p {
 }
 
 .button.w--current {
-  background-color: #2e80b6;
+  background-color: white;
 }
 
 .button.full-width {
@@ -2239,7 +2239,7 @@ p {
 
 .button.tab:hover,
 .button.tab.w--current {
-  background-color: #2e80b6;
+  background-color: white;
 }
 
 .navigation-link {

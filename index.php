@@ -291,8 +291,10 @@ if (isset($_POST['submit'])) {
       <!-- FEEDBACK FORM  -->
 
 
-      <div class="container w-container">
-        <div class="section-title-group">
+      <div 
+       class="container w-container">
+        <div 
+        class="section-title-group">
           <h2 class="section-heading centered text-white">Send us your feedback</h2>
           <div class="section-subheading center">
             &quot;Your feedback helps us level up! We appreciate your insights
@@ -304,18 +306,20 @@ if (isset($_POST['submit'])) {
           data-duration-out="100"
           data-current="Tab 3"
           data-easing="ease"
-          class="tabs-wrapper w-tabs"
+          
+          class="tabs-wrapper w-tabs white-box" style=" background-color: #53212B;"
         >
         
-            <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
+            <div data-w-id="270e8437-efa3-df11-d438-de69b23e41e9" data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
 
               <!-- // FORMS // -->
 
              
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="text-center">
-  <div class="mb-3 m-auto col-sm-6">
-    <label for="name" class="form-label">Name</label>
+  <div  class="mb-3 m-auto col-sm-8">
+    <br>
+    <label for="name" class="form-label mt-5">Name</label>
     <input
       type="text"
       class="form-control"
@@ -325,7 +329,7 @@ if (isset($_POST['submit'])) {
 
     <?php if (!empty($nameErr)) { ?> <span class="text-danger"> <?php echo $nameErr; ?></span> <?php } ?>
   </div>
-  <div class="mb-3 m-auto col-sm-6">
+  <div class="mb-3 m-auto col-sm-8">
     <label for="email" class="form-label">Email</label>
     <input
       type="email"
@@ -338,7 +342,7 @@ if (isset($_POST['submit'])) {
 
 
   </div>
-  <div class="mb-3 m-auto col-sm-6">
+  <div class="mb-3 m-auto col-sm-8">
     <label for="body" class="form-label">Feedback</label>
     <textarea
       class="form-control"

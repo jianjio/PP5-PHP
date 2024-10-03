@@ -87,7 +87,9 @@
             aria-current="page"
             class="navigation-link w-nav-link w--current"
             >Home</a
-          ><a href="feedback.php" class="navigation-link w-nav-link">Feedbacks</a>
+         
+          ><a href="about.php" class="navigation-link w-nav-link w--current">About</a>
+          <a href="feedback.php" class="navigation-link w-nav-link w--current">Feedbacks</a>
         </nav>
         <div class="hamburger-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
