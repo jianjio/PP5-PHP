@@ -1,8 +1,8 @@
 <?php include './components/header.php' ?>
 
 <?php
-//Set vars to empty values
-$name = $email = $body = '';
+// Set vars to empty values 
+$name = $email = $body = ''; 
 $nameErr = $emailErr = $bodyErr = '';
 
 //Form submit
@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
 
   if (empty($nameErr) && empty($emailErr) && empty($bodyErr)) {
 
-    //Set timezone to Asia/Manila
+    // Set timezone to Asia/Manila
     date_default_timezone_set('Asia/Manila');
 
     //Add to database
